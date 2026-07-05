@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0f1117;
+  color: #e6e6e6;
+  font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+header h1 {
+  margin: 0 0 0.4rem;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  color: #9aa4b2;
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.subtitle a {
+  color: #4f9dde;
+  text-decoration: none;
+}
+
+.subtitle a:hover {
+  text-decoration: underline;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: flex-end;
+  background: #171a23;
+  border: 1px solid #262b38;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 140px;
+}
+
+.control-group label {
+  font-size: 0.8rem;
+  color: #9aa4b2;
+}
+
+select {
+  background: #0f1117;
+  color: #e6e6e6;
+  border: 1px solid #2f3546;
+  border-radius: 6px;
+  padding: 0.45rem 0.6rem;
+  font-size: 0.9rem;
+}
+
+input[type="range"] {
+  accent-color: #4f9dde;
+}
+
+.buttons {
+  flex-direction: row;
+  gap: 0.75rem;
+  align-self: flex-end;
+}
+
+button {
+  padding: 0.55rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #2f3546;
+  background: #1f2430;
+  color: #e6e6e6;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.15s ease, transform 0.1s ease;
+}
+
+button:hover:not(:disabled) {
+  background: #2a3040;
+}
+
+button:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.primary {
+  background: #4f9dde;
+  border-color: #4f9dde;
+  color: #0f1117;
+  font-weight: 600;
+}
+
+button.primary:hover:not(:disabled) {
+  background: #6cb0e8;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+  color: #9aa4b2;
+}
+
+.stats strong {
+  color: #e6e6e6;
+}
+
+.bars-container {
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  background: #171a23;
+  border: 1px solid #262b38;
+  border-radius: 12px;
+  padding: 1.5rem 1rem 1rem;
+  min-height: 340px;
+}
+
+.bar {
+  border-radius: 3px 3px 0 0;
+  transition: background-color 0.1s ease;
+}
+
+footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #5b6472;
+  font-size: 0.8rem;
+}
